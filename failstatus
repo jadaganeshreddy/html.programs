@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pass or Fail Checker</title>
+</head>
+<body>
+
+<h2>Student Result Checker</h2>
+
+<label>Enter Marks:</label>
+<input type="number" id="marks">
+<button onclick="checkResult()">Check Result</button>
+
+<p id="result"></p>
+
+<script>
+function checkResult() {
+    var marks = document.getElementById("marks").value;
+
+    if (marks > 33) {
+        document.getElementById("result").innerHTML = "Student Passed";
+    } else {
+        document.getElementById("result").innerHTML = "Student Failed";
+    }
+}
+</script>
+
+</body>
+</html>
